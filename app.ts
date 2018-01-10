@@ -6,10 +6,10 @@ import { Director } from './Director';
 let BuilderPC = new ComputerBuilder();
 let BuilderNB = new NBBuilder();
 
-let director = new Director(BuilderPC);
+let directorPC = new Director(BuilderPC);
 
 let PC = BuilderPC.GetResult();
 
-let director2 = new Director(BuilderNB);
+let directorNB = new Director(BuilderNB);
 
-let NB = BuilderPC.GetResult();
+let NB = BuilderNB.GetResult();

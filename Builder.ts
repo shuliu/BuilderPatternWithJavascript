@@ -2,14 +2,14 @@
 export interface Builder {
 
   /** 建立 CPU */
-  addCPU();
+  addCPU(): void;
 
   /** 建立 Memory */
-  addMemory();
+  addMemory(): void;
 
   /** 建立硬碟 */
-  addHD();
+  addHD(): void;
 
   /** 建立外殼 */
-  addBox();
+  addBox(): void;
 }
