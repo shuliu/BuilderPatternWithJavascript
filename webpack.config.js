@@ -1,4 +1,15 @@
-const path = require('path');
+"use strict";
+/* jshint node: true */
+
+const webpack = require('webpack');
+const Path = require('path');
+
+const outputPath = 'dist';
+
+const paths = {
+    build: Path.resolve(__dirname, outputPath + '/js'),
+    web: Path.join(__dirname, '')
+};
 
 module.exports = {
   entry: './app.ts',
@@ -17,7 +28,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: Path.resolve(__dirname, 'dist')
   },
   devServer: {
     contentBase: paths.web,
